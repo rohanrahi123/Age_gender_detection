@@ -39,10 +39,7 @@ Source: Official OpenVINO Model Zoo
 Model Name: age-gender-recognition-retail-0013
 Source: Official OpenVINO Model Zoo
 
-# 📄 face-detection-retail-0005.xml 
-
-```markdown
-# face-detection-retail-0005.xml
+📄 face-detection-retail-0005.xml 
 
 Model architecture file for face detection.
 
@@ -61,8 +58,8 @@ OpenVINO IR format (.xml)
 ## Output
 
 Bounding box coordinates + confidence score
-📄 face-detection-retail-0005.bin 
-# face-detection-retail-0005.bin
+
+📄 face-detection-retail-0005.bin
 
 Weights file for face detection model.
 
@@ -73,6 +70,8 @@ Stores trained parameters used by XML architecture file.
 ## Required With
 
 face-detection-retail-0005.xml
+
+
 📄 age-gender-recognition-retail-0013.xml 
 
 Model architecture for age and gender recognition.
