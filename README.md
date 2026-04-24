@@ -24,3 +24,83 @@ Age-Gender-Detection/
 │── age-gender-recognition-retail-0013.xml
 │── age-gender-recognition-retail-0013.bin
 │── README.md
+
+⚙️ Requirements
+
+Install dependencies:
+
+pip install openvino opencv-python numpy
+
+🧠 Models Used
+1️⃣ Face Detection Model
+Model Name: face-detection-retail-0005
+Source: Official OpenVINO Model Zoo
+2️⃣ Age + Gender Model
+Model Name: age-gender-recognition-retail-0013
+Source: Official OpenVINO Model Zoo
+
+# 📄 face-detection-retail-0005.xml 
+
+```markdown
+# face-detection-retail-0005.xml
+
+Model architecture file for face detection.
+
+## Purpose
+
+Detect human faces in image/video frames.
+
+## Format
+
+OpenVINO IR format (.xml)
+
+## Input Size
+
+300 x 300
+
+## Output
+
+Bounding box coordinates + confidence score
+📄 face-detection-retail-0005.bin 
+# face-detection-retail-0005.bin
+
+Weights file for face detection model.
+
+## Purpose
+
+Stores trained parameters used by XML architecture file.
+
+## Required With
+
+face-detection-retail-0005.xml
+📄 age-gender-recognition-retail-0013.xml 
+
+Model architecture for age and gender recognition.
+
+## Purpose
+
+Predicts:
+
+- Age
+- Gender
+
+## Input Size
+
+62 x 62 face image
+
+## Output
+
+- Estimated Age
+- Male / Female Probability
+📄 age-gender-recognition-retail-0013.bin 
+# age-gender-recognition-retail-0013.bin
+
+Weights file for age-gender model.
+
+## Purpose
+
+Stores trained parameters for age and gender prediction.
+
+## Required With
+
+age-gender-recognition-retail-0013.xml
